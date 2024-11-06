@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <ctype.h>
 #include <stddef.h>
 #include <stdio.h>
@@ -28,8 +27,8 @@ char	uppercase_and_append_index(unsigned int i, char c)
 }
 int	main(void)
 {
-	char	s[] = "said";
-	char	s1[] = "faouzi";
+	// char	s[] = "said";
+	// char	s1[] = "faouzi";
 
 	// printf("ft_isalpha %d\n", ft_isalpha('f'));
 	// printf("ft_isdigit %d\n", ft_isdigit(5));
@@ -240,6 +239,9 @@ int	main(void)
 	// printf("%d\n", *(int *)ft_lstnew(&b)->content);
 	// printf("%d\n", *(int *)ft_lstnew(&c)->content);
 	// printf("%d\n", *(int *)ft_lstnew(&d)->content);
-	printf("%s\n", ft_memcpy(s1, s, 2));
-	printf("%s\n", memcpy(s1, s, 2));
+	// printf("%s\n", ft_memcpy(s1, s, 2));
+	// printf("%s\n", memcpy(s1, s, 2));
+
+	char str[] = "saidfaouzi";
+	printf("%s\n", ft_substr(str,4,2));
 }
