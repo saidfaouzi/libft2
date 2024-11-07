@@ -17,38 +17,22 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	j = 0;
 	i = 0;
+	if (!big && len == 0)
+		return (NULL);
 	if (little[0] == '\0')
 		return ((char *)big);
-	while (i < len)
+	while (big[i] && (i + j) < len)
 	{
 		j = 0;
-		while (big[i] == little[j] && little[j] && i < len)
+		while (little[j] && big[i + j] && little[j] == big[i + j] && (i
+				+ j) < len)
 		{
-			i++;
 			j++;
 		}
 		if (little[j] == '\0')
-			return ((char *)&big[i - ft_strlen((char *)little)]);
+			return ((char *)&big[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
-/*#include <string.h>
-#include <stdio.h>
-
-int	main(void)
-{
-// char	src[] = "said";
-// 	char dst[6];
-// 	ft_strlcpy(dst,src,5);
-// 	printf("%s\n", dst);
-// 	char src1[] = "said";
-// 	char dst1[6];
-// 	strlcpy(dst1,src1,5);
-// printf("%s\n", dst1);
-char	big[] = "aaaaaac";
-char	litle[] = "aaaaaac";
-printf("%s\n",ft_strnstr(big, litle, 7));
-}*/
