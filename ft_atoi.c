@@ -34,5 +34,14 @@ int	ft_atoi(const char *nptr)
 		res = res + ((char)nptr[i] - 48);
 		i++;
 	}
-	return (res);
+	return (res * signe);
 }
+/*#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char str[] = "-1234";
+	printf("%i\n", ft_atoi(str));
+	//printf("%i\n", atoi(str));
+}*/
