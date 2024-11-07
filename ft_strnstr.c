@@ -41,7 +41,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 int	main(void)
 {
-char	big[] = "saif saif saidfaouzi";
+char	big[] = "said";
 char	litle[] = "said";
-printf("%p\n",ft_strnstr(big, litle, 0));
+printf("%p\n",ft_strnstr(big, litle, 2));
 }*/
