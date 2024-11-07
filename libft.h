@@ -14,13 +14,13 @@
 # define LIBFT_H
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-int					ft_memcmp(const void *s1, const void *s2, size_t n);
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t nmemb, size_t size);
@@ -49,6 +49,7 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr_fd(char *s, int fd);
 char				**ft_split(char const *s, char c);
+int					ft_memcmp(const void *s1, const void *s2, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
