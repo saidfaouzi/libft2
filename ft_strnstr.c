@@ -35,3 +35,20 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
+/*#include <string.h>
+#include <stdio.h>
+
+int	main(void)
+{
+// char	src[] = "said";
+// 	char dst[6];
+// 	ft_strlcpy(dst,src,5);
+// 	printf("%s\n", dst);
+// 	char src1[] = "said";
+// 	char dst1[6];
+// 	strlcpy(dst1,src1,5);
+// printf("%s\n", dst1);
+char	big[] = "aaaaaac";
+char	litle[] = "aaaaaac";
+printf("%s\n",ft_strnstr(big, litle, 7));
+}*/
