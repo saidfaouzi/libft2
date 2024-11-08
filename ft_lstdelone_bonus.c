@@ -17,3 +17,21 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
+/*#include <stdio.h>
+void	del(void *content)
+{
+	(void)content;
+}
+
+int	main(void)
+{
+	t_list *node = ft_lstnew("Node to delete");
+
+	printf("before %s\n", (char *)node->content);
+
+	ft_lstdelone(node, del);
+
+	printf("after %s\n", (char *)node->content);
+
+	return (0);
+}*/

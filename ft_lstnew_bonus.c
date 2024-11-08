@@ -14,12 +14,32 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*head;
+	t_list	*node;
 
-	head = malloc(sizeof(t_list));
-	if (head == NULL)
+	node = malloc(sizeof(t_list));
+	if (node == NULL)
 		return (NULL);
-	head->content = content;
-	head->next = NULL;
-	return (head);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
+/*#include <stdio.h>
+int	main(void)
+{
+	t_list *list = NULL;
+	t_list *list1 = ft_lstnew("node 1");
+	t_list *list2 = ft_lstnew("node 2");
+	t_list *list3 = ft_lstnew("node 3");
+
+	ft_lstadd_back(&list, list1);
+	ft_lstadd_back(&list, list2);
+	ft_lstadd_back(&list, list3);
+
+	while (list)
+	{
+		printf("%s -> ", (char *)list->content);
+		list = list->next;
+	}
+	printf("\n");
+	printf("%s\n", (char *)list1->content);
+}*/

@@ -27,3 +27,43 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+/*#include <stdio.h>
+void	test_print(t_list *list)
+{
+	if (!list)
+	{
+		printf("List is empty\n");
+		return ;
+	}
+	while (list)
+	{
+		printf("%s -> ", (char *)list->content);
+		list = list->next;
+	}
+	printf("\n");
+}
+void	del(void *content)
+{
+	(void)content;
+}
+
+int	main(void)
+{
+	t_list *list = NULL;
+	t_list *node1 = ft_lstnew("Node 1");
+	t_list *node2 = ft_lstnew("Node 2");
+	t_list *node3 = ft_lstnew("Node 3");
+
+	ft_lstadd_back(&list, node1);
+	ft_lstadd_back(&list, node2);
+	ft_lstadd_back(&list, node3);
+
+	printf("before \n");
+	test_print(list);
+
+	ft_lstclear(&list, del);
+
+	printf("after \n");
+	test_print(list);
+
+}*/
