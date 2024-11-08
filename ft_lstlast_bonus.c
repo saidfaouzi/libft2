@@ -16,6 +16,8 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*count;
 
+	if (lst == NULL)
+		return (NULL);
 	count = lst;
 	while (count->next != NULL)
 		count = count->next;

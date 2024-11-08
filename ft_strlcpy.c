@@ -6,7 +6,7 @@
 /*   By: sfaouzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:58:04 by sfaouzi           #+#    #+#             */
-/*   Updated: 2024/11/06 11:58:04 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2024/11/07 22:17:42 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	int j;
+	size_t	i;
+	int		j;
 
 	j = ft_strlen((char *)src);
 	i = 0;

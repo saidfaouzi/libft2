@@ -85,3 +85,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[j] = '\0';
 	return (str);
 }
+/*#include <stdio.h>
+int	main(void)
+{
+	char str[] = "popopo";
+	char str1[] = "po";
+	printf("%s\n", ft_strtrim(str, str1));
+}*/

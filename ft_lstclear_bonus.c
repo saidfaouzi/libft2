@@ -18,7 +18,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*clearing2;
 
 	clearing = *lst;
-	clearing2 = *lst;
 	while (clearing != NULL)
 	{
 		clearing2 = clearing->next;
@@ -26,4 +25,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		free(clearing);
 		clearing = clearing2;
 	}
+	*lst = NULL;
 }
